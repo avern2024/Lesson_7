@@ -5,7 +5,7 @@ def custom_write(file_name, strings):
         for index, string in enumerate(strings, start=1):
             bite_position = f.tell()
             f.write(string + '\n')
-            strings_positions[(index,bite_position)] = string
+            strings_positions[(index, bite_position)] = string
 
     return strings_positions
 
